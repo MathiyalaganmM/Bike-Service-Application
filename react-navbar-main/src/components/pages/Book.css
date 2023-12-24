@@ -1,0 +1,48 @@
+.form-modal{
+    position:relative;
+    width:450px;
+    height:430px;
+    margin-top:4em;
+    left:50%;
+    transform:translateX(-50%);
+    background:#fff;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow:0 3px 20px 0px rgba(0, 0, 0, 0.1)
+}
+.form-modal button{
+    cursor: pointer;
+    position: relative;
+    text-transform: capitalize;
+    font-size:1em;
+    z-index: 2;
+    outline: none;
+    background:#fff;
+    transition:0.2s;
+}
+.form-modal form{
+    position: relative;
+    width:90%;
+    height:auto;
+    left:50%;
+    transform:translateX(-50%);  
+}
+#submit{
+    margin-left:37%;
+}
+.form-modal h1{
+    padding-top:12px;
+    text-align: center;
+}
+@media only screen and (max-width:500px){
+    .form-modal{
+        width:100%;
+    }
+}
+
+@media only screen and (max-width:400px){
+    i{
+        display: none!important;
+    }
+}

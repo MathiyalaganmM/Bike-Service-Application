@@ -1,0 +1,365 @@
+.img{
+    animation:img-ani 1s ease-in;
+}
+/* @keyframes img-ani {
+    0%{
+        transform:translateX(-100%);
+      }
+      50%{
+        transform:translateX(20%);
+      }
+      100%{
+        transform: translateX(0%);
+      }
+} */
+.home{
+    position: relative;
+}
+.img img{
+    
+    width:97vw;
+    height:85vh;
+    border-radius: 20px;
+    filter:blur(5px);
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+.text{
+    position: absolute;
+    top:20%;
+    left:6%;
+}
+.text button{
+    padding:10px;
+    background-color: aquamarine;
+    border-color: none;
+    border-radius: 20px;
+    transition: 1.5s;
+}
+.text button:hover{
+    background-color: rgb(195, 255, 0);
+    border-radius: 0px;
+    
+}
+p{
+    color:aquamarine;
+    font-size: 20px;
+    font-weight:800;
+}
+h1{
+    color:white;
+}
+.text h2{
+    color:aquamarine;
+    width:50vw;
+}
+
+.choose p{
+    color:black;
+    text-align: center;
+    padding:20px;
+}
+.topic{
+    display: flex;
+    margin-left:20px;
+    gap:10%;
+}
+.first{
+  width: 25%;
+  background-color:rgb(235, 226, 226) ;
+  padding:20px;
+  border-radius: 20px;
+  transition: 1.2s;
+}
+.second{
+    width: 28%;
+    background-color:rgb(235, 226, 226) ;
+    padding-top:20px;
+    padding-left:20px;
+    border-radius: 20px;
+    transition: 1.2s;
+    animation:sec 2.5s ease-in-out;
+}
+@keyframes sec {
+    0%{
+        transform:translateX(-100vw) ;
+    }
+    100%{
+        transform:translateX(0px) ;
+    }
+}
+.third{
+    width: 28%;
+    background-color:rgb(235, 226, 226) ;
+    padding-top:20px;
+    padding-left:20px;
+    border-radius: 20px;
+    transition: 1.2s;
+    animation:thi 3s ease-in-out;
+}
+@keyframes thi {
+    0%{
+        transform:translateX(-100vw) ;
+    }
+    100%{
+        transform:translateX(0px) ;
+    }
+}
+.first:hover{
+    background-color: aqua;
+    scale: 1.1;
+    border-radius: 0px;
+}
+.second:hover{
+    background-color: aqua;
+    scale: 1.1;
+    border-radius: 0px;
+}
+.third:hover{
+    background-color: aqua;
+    scale: 1.1;
+    border-radius: 0px;
+}
+.first a,.second a,.third a{
+    margin-left:10vw;
+}
+.finner h1,.sinner h1,.tinner h1{
+    color:black;
+}
+.about{
+    margin-top: 20px;
+    display: flex;
+    margin-left:20px;
+    gap:8vw;
+}
+.a-inner{
+    margin-top:90px ;
+}
+.a-inner p,h1{
+   color:black;
+}
+.a-p{
+    color:black;
+    font-weight: 800;
+    font-size: large;
+}
+.a-icons{
+    display: flex;
+    gap:8px;
+}
+.s-inner{
+    width:40vw;
+    margin-left:30vw;
+}
+.s-inner p,.s-inner h1{
+    text-align: center;
+}
+.slide1 span,.slide2 span{
+    margin-left:18vw;
+}
+.slide1 h1,.slide2 h1,.slide3 h1{
+    margin-left:10vw;
+}
+.slide1 h4,.slide2 h4,.slide3 h4{
+    width:40vw;
+}
+.slide1,.slide2,.slide3{
+    margin-left:35vw;
+}
+.slide3 span{
+    margin-left:15vw;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.ach1 p,.ach2 p,.ach3 p,.ach4 p{
+   color:rgb(4, 6, 4);
+}
+.ach1 span,.ach2 span,.ach3 span,.ach4 span{
+    margin-left:40px;
+ }
+ .ach1 h1,.ach2 h1,.ach3 h1,.ach4 h1{
+    margin-left:20px;
+ }
+.ach{
+    margin-left:50px;
+    display: flex;
+    gap:5vw;
+}
+.ach1{
+    height:240px;
+    width:300px;
+    padding:60px 10px 20px 60px;
+    background-color: rgb(248, 236, 187);
+    border-radius: 45%;
+    transition: 1.2s;
+}
+
+.ach2{
+    height:240px;
+    width:300px;
+    padding:60px 10px 20px 60px;
+    background-color: rgb(140, 217, 241);
+    border-radius: 45%;
+    transition: 1.2s;
+}
+.ach3{
+    height:240px;
+    width:300px;
+    padding:60px 10px 20px 60px;
+    background-color: rgb(243, 198, 234);
+    border-radius: 45%;
+    transition: 1.2s;
+}
+.ach4{
+    height:240px;
+    width:300px;
+    padding:60px 10px 20px 60px;
+    background-color: rgb(165, 160, 136);
+    border-radius: 45%;
+    transition: 1.2s;
+}  
+.ach1:hover{
+    background-color: aqua;
+    scale: 1.1;
+    border-radius: 0px;
+}
+.ach2:hover{
+    background-color: aqua;
+    scale: 1.1;
+    border-radius: 0px;
+}
+.ach3:hover{
+    background-color: aqua;
+    scale: 1.1;
+    border-radius: 0px;
+}
+.ach4:hover{
+    background-color: aqua;
+    scale: 1.1;
+    border-radius: 0px;
+}
+@media all and (max-width:670px){
+    .text{
+      top:5%;
+    }
+    .img img{
+     height:95vh;
+    }
+    .topic{
+      flex-direction: column;
+      left:-10px;
+      gap:15px;
+    }
+    .finner h1{
+       text-align: center;
+    }
+    .first,.second,.third{
+        width:90vw;
+        margin-left:-10px;
+    }
+    .first a,.second a,.third a{
+        margin-left:35vw;
+        
+    }
+    .about{
+        flex-direction: column;
+    }
+    .a-inner{
+        margin-top:10px;
+    }
+    img{
+        margin-left:-2px;
+    }
+    .s-inner{
+        width:80vw;
+        margin-left:20px;
+    }
+    .slide1{
+        margin-left: 0;
+        width:100%;
+    }
+    .slide1 span,.slide2 span{
+        margin-left:40vw;
+    }
+    .slide1 h1,.slide2 h1{
+        margin-left: 17vw;
+    }
+    .slide3 h1{
+        text-align: center;
+    }
+    .slide1 h4,.slide2 h4,.slide3 h4{
+        width:90vw;
+    }
+    .slide1,.slide2,.slide3{
+        margin-left:0;
+    }
+    .slide3 span{
+        margin-left:50vw;
+    }
+    .ach{
+        flex-direction: column;
+        margin-left: 8vw;
+    }
+    .ach1{
+        height:240px;
+        width:300px;
+        padding-left:15vw;
+        background-color: rgb(248, 236, 187);
+        border-radius: 20px;
+        transition: 1.2s;
+    }
+    .ach2{
+        height:240px;
+        width:300px;
+                padding-left:15vw;
+
+        background-color: rgb(140, 217, 241);
+        border-radius: 20px;
+        transition: 1.2s;
+    }
+    .ach3{
+        height:240px;
+        width:300px;
+                padding-left:15vw;
+
+        background-color: rgb(243, 198, 234);
+        border-radius: 20px;
+        transition: 1.2s;
+    }
+    .ach4{
+        height:240px;        
+        width:300px;
+        padding-left:15vw;
+
+        background-color: rgb(165, 160, 136);
+        border-radius: 20px;
+        transition: 1.2s;
+    }  
+ }
+ @media all and (max-width:321px){
+    .ach{
+        margin-left:10px;
+    }
+    .ach1,.ach2,.ach3,.ach4{
+        padding-left:25vw;
+    }
+ }
