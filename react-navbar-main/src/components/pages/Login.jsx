@@ -22,14 +22,14 @@ export var email='', Login = () => {
   const [admin,setAdmin]=useState(false)
   const submitData = async (data) => {
     try {
-       await axios.post('http://localhost:3000/add-user', data);
+       await axios.post('https://bike-service-application-reb3.onrender.com/add-user', data);
     } catch (error) {
        console.error(error);
     }
    };
    const submitLData = async (data) => {
     try {
-       await axios.post('http://localhost:3000/send-email', data);
+       await axios.post('https://bike-service-application-reb3.onrender.com/send-email', data);
     } catch (error) {
        console.error(error);
     }
@@ -41,7 +41,7 @@ export var email='', Login = () => {
    useEffect(() => {
       async function fetchData() {
         try {
-          const response = await axios.get('http://localhost:3000/get');
+          const response = await axios.get('https://bike-service-application-reb3.onrender.com/get');
           setUsers(response.data);
           console.log(response.data);
         } catch (error) {
@@ -55,9 +55,8 @@ export var email='', Login = () => {
    useEffect(() => {
     async function fetchData1() {
       try {
-        const response = await axios.get('http://localhost:3000/get-admin');
+        const response = await axios.get('https://bike-service-application-reb3.onrender.com/get-admin');
         setAdminl(response.data);
-        console.log(response.data);
       } catch (error) {
         console.error('Error fetching users:', error);
       }
