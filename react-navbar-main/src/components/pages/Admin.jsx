@@ -9,7 +9,7 @@ export const Admin = () => {
    useEffect(() => {
       async function fetchData() {
         try {
-          const response = await axios.get('http://localhost:3000/get-book');
+          const response = await axios.get('https://bike-service-application-reb3.onrender.com/get-book');
           setUsers(response.data);
           console.log(response.data);
         } catch (error) {
@@ -23,7 +23,7 @@ export const Admin = () => {
    const submitData = async (data) => {
     let obj={"id":data}
     try {
-       await axios.post('http://localhost:3000/delete', obj);
+       await axios.post('https://bike-service-application-reb3.onrender.com/delete', obj);
     } catch (error) {
        console.error(error);
     }
@@ -38,30 +38,7 @@ export const Admin = () => {
         <div className="admin-first">
         <p>Hello Mathiyalagan. <box-icon type='solid' name='hand'></box-icon> This dashboard provides a comprehensive overview of key metrics, including total services completed, pending service requests, and today's appointments. Quickly track new service requests, monitor inventory levels, and engage with customer data effortlessly.</p>
         </div>
-        {/* <div className="admin-second">
-            <div className="admin-sf">
-                <div>
-                <box-icon type='solid' name='hand'></box-icon>
-                </div>
-                <div>
-                    <h1>1</h1>
-                    <p>New Order</p>
-                </div>
-            </div>
-            
-            <div className="admin-sf">
-                <div>
-                <box-icon type='solid' name='hand'></box-icon>
-                </div>
-                <div>
-                    <h1>10</h1>
-                    <p>Total visited</p>
-                </div>
-            </div>
-
-            
-            
-        </div> */}
+       
         <div className="admin-third">
            <h1>Bookings</h1>
            <div >
