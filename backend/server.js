@@ -82,7 +82,7 @@ app.post('/add-user', (req, res) => {
     password: password
   })
   user.save()
-    .then((result) => res.send(result))
+    .then((result) => console.log(result))
     .catch((err) => console.log(err))
 
 
