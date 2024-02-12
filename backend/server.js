@@ -119,7 +119,32 @@ app.post('/send-email', (req, res) => {
   }
   main(email, lname).catch(console.error);
 })
+app.post('/send-port-email', (req, res) => {
+  const data = req.body
+  const { name,email,msg} = data
 
+  const transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true, // use SSL
+    auth: {
+      user: "mathiyalaganm118@gmail.com",
+      pass: "wiidkeknfvsbeazf",
+    },
+  });
+
+  async function main(email,name,msg) {
+   
+    const info = await transporter.sendMail({
+        from: '"Mathiyalagan" <mathiyalaganm118@gmail.com>', // sender address
+        to: 'mathiyalaganm118@gmail.com', // list of receivers
+        subject: "", // Subject line
+        text: `New person named ${name} from the email ${email} contacts you for the reason ${msg}.`, // plain text body
+      });
+    console.log("Message sent: %s", info.messageId);
+  }
+  main(email, name,msg).catch(console.error);
+})
 app.post('/book', (req, res) => {
   const bookingData = req.body;
   const { number, date, selectedOption, email } = bookingData
